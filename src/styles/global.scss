@@ -15,10 +15,26 @@
 
   --green-500: #04D361;
   
+  --purple-100: #b597fa;
   --purple-300: #9F75FF;
   --purple-400: #9164FA; 
   --purple-500: #8257E5;
   --purple-800: #6F48C9;
+}
+
+// * Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  
+}
+
+*::-webkit-scrollbar-track {
+  background: white;}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--purple-100);
+  border-radius: 0.5rem;
+
 }
 
 @media (max-width: 1000px){

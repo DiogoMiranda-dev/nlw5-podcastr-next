@@ -109,9 +109,9 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
             <tr>
               <th></th>
               <th>Podcast</th>
-              <th>Integrantes</th>
+              <th className={styles.integrantes}>Integrantes</th>
               <th>Data</th>
-              <th>Duração</th>
+              <th className={styles.duracao}>Duração</th>
               <th></th>
             </tr>
           </thead>
@@ -119,7 +119,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
             {allEpisodes.map((episode, index) => {
               return (
                 <tr key={episode.id}>
-                  <td style={{ width: 72 }}>
+                  <td className={styles.toFitSize}>
                     <Image
                       width={120}
                       height={120}
@@ -133,9 +133,9 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                       <a>{episode.title}</a>
                     </Link>
                   </td>
-                  <td>{episode.members}</td>
-                  <td style={{ width: 100 }}>{episode.publishedAt}</td>
-                  <td>{episode.durationAsString}</td>
+                  <td className={styles.integrantes}>{episode.members}</td>
+                  <td className={styles.toFitSize}>{episode.publishedAt}</td>
+                  <td className={styles.duracao}>{episode.durationAsString}</td>
                   <td>
                     <button
                       type="button"

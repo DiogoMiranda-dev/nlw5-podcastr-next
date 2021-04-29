@@ -1,8 +1,7 @@
 .playerContainer {
-  padding: 3rem 4rem;
-  width: 26.5rem;
+  width: 25rem;
   height: 100vh;
-
+  padding: 3rem;
   background: var(--purple-500);
   color: var(--white);
 
@@ -72,7 +71,7 @@
 .progress {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: 0.875rem;
 
   span {
@@ -104,8 +103,6 @@
     border: 0;
     font-size: 0;
 
-    transform: filter 0.2s;
-
     &:disabled {
       cursor: default;
       opacity: 0.5;
@@ -135,3 +132,86 @@
     }
   }
 }
+
+
+@media (max-width: 720px) {
+  .playerContainer {
+    padding: 1rem 1rem;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12rem;
+    
+    header {
+      display: none;
+    }
+  
+    strong {
+      display: none;
+    }
+  
+    footer {
+      align-self: stretch;
+    }
+  
+    &.empty .progress{
+      opacity: 0.5;
+    }
+  }
+
+  .currentEpisode {
+    text-align: center;
+  
+    .thumbnailWrapper {
+      display: none;
+  
+      img {
+        display: none;
+      }
+    }
+    
+  
+    strong {
+      display: block;
+      margin-top: 0rem;
+      font: 600 1rem Lexend, sans-serif;
+      line-height: 1.25rem;
+    }
+  
+    span {
+      font-size:0.7rem;
+      margin-top: 0;
+    }
+  }
+
+    
+  .emptyPlayer {
+   display: none;
+   margin-top: 1rem;
+   margin-bottom: 0;
+  }
+
+  .progress {
+     margin-top: 1rem;
+   
+    .slider {
+      flex: 1;
+  
+      .emptySlider {
+        width: 100%;
+        height: 4px;
+        background: var(--gray-100);
+        opacity: 0.3;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: .5rem;
+   padding-bottom: 5rem;
+
+    }
+  }
+  
