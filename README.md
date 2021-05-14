@@ -163,10 +163,10 @@ Para clonar e executar este aplicativo, você precisará de [Git](https://git-sc
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/DiogoMiranda-dev/nlw4-pomo-up-next.git
+$ git clone https://github.com/DiogoMiranda-dev/nlw5-podcastr-next.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd nlw4-pomo-up-next
+$ cd nlw5-podcastr-next
 ```
 
 ### 🎲 Rodando a Aplicação
